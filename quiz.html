@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz : Formule 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/bootstrap/bootstrap.css"/>
+  <link rel="icon" type="image/png" href="/imgs/logo.png">
+</head>
+<body>
+	<header>
+		<a href="../index.html" class="logo-holder">
+			<div class="logo"><img src="/imgs/logo.png" alt="TF" width="100%" /></div>
+			<div class="logo-text">Site Web Portfolio</div>
+		</a>
+		<nav>
+			<ul id="menu">
+				<li>
+					<a href="../index.html">Accueil</a>
+				</li>
+				<li>
+					<a href="/pages_html/comp_info.html">Compétences</a>
+				</li>
+				<li>
+					<a href="/pages_html/parcours.html">Parcours</a>
+				</li>
+        		<li>
+					<a href="/pages_html/matieres.html">Matières</a>
+				</li>
+				<li>
+					<a href="/pages_html/exp_pro.html">Experiences</a>
+				</li>
+				<li>
+					<a href="/pages_html/qualites.html">Passions</a>
+				</li>
+        		<li>
+					<a href="/pages_html/quiz.html">Quiz</a>
+				</li>
+			</ul>
+			<a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+				<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+					<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+				</svg>
+			</a>
+		</nav>
+	</header>
+    <div class="quiz-container">
+        <h1>Quiz : Connaissez-vous bien la Formule 1 ?</h1>
+        <form id="quiz-form">
+            <div class="quiz-flex">
+                <div class="quiz-column">
+                    <div class="question">
+                        <p>1. Qui détient le record du plus grand nombre de championnats du monde en Formule 1 ?</p>
+                        <label><input type="radio" name="q1" value="A"> Alain Prost</label><br>
+                        <label><input type="radio" name="q1" value="B"> Lewis Hamilton</label><br>
+                        <label><input type="radio" name="q1" value="C"> Michael Schumacher</label><br>
+                        <label><input type="radio" name="q1" value="D"> Ayrton Senna</label>
+                    </div>
+    
+                    <div class="question">
+                        <p>2. Quelle est l'écurie la plus titrée dans l'histoire de la Formule 1 ?</p>
+                        <label><input type="radio" name="q2" value="A"> McLaren</label><br>
+                        <label><input type="radio" name="q2" value="B"> Ferrari</label><br>
+                        <label><input type="radio" name="q2" value="C"> Red Bull</label><br>
+                        <label><input type="radio" name="q2" value="D"> Mercedes</label>
+                    </div>
+    
+                    <div class="question">
+                        <p>3. En quelle année s'est tenue la première saison officielle du championnat de Formule 1 ?</p>
+                        <label><input type="radio" name="q3" value="A"> 1948</label><br>
+                        <label><input type="radio" name="q3" value="B"> 1950</label><br>
+                        <label><input type="radio" name="q3" value="C"> 1955</label><br>
+                        <label><input type="radio" name="q3" value="D"> 1960</label>
+                    </div>
+    
+                    <div class="question">
+                        <p>4. Quel pilote a remporté le championnat de F1 en 2021 ?</p>
+                        <label><input type="radio" name="q4" value="A"> Lewis Hamilton</label><br>
+                        <label><input type="radio" name="q4" value="B"> Max Verstappen</label><br>
+                        <label><input type="radio" name="q4" value="C"> Sebastian Vettel</label><br>
+                        <label><input type="radio" name="q4" value="D"> Valtteri Bottas</label>
+                    </div>
+    
+                    <div class="question">
+                        <p>5. Quel circuit est connu pour son tunnel emblématique ?</p>
+                        <label><input type="radio" name="q5" value="A"> Circuit de Spa-Francorchamps</label><br>
+                        <label><input type="radio" name="q5" value="B"> Circuit de Monaco</label><br>
+                        <label><input type="radio" name="q5" value="C"> Circuit de Suzuka</label><br>
+                        <label><input type="radio" name="q5" value="D"> Circuit des Amériques</label>
+                    </div>
+                </div>
+    
+                <div class="quiz-column">
+                    <div class="question">
+                        <p>6. Quelle est la longueur moyenne d'une course de F1 (en km) ?</p>
+                        <select name="q6" required>
+                            <option value="">-- Choisissez une réponse --</option>
+                            <option value="A">200 km</option>
+                            <option value="B">300 km</option>
+                            <option value="C">305 km</option>
+                            <option value="D">400 km</option>
+                        </select>
+                    </div>
+    
+                    <div class="question">
+                        <p>7. Quels pilotes ont couru pour Ferrari ? (Choisissez plusieurs réponses)</p>
+                        <label><input type="checkbox" name="q7" value="A"> Sebastian Vettel</label><br>
+                        <label><input type="checkbox" name="q7" value="B"> Lewis Hamilton</label><br>
+                        <label><input type="checkbox" name="q7" value="C"> Michael Schumacher</label><br>
+                        <label><input type="checkbox" name="q7" value="D"> Fernando Alonso</label>
+                    </div>
+    
+                    <div class="question">
+                        <p>8. Quel est le surnom du circuit de Spa-Francorchamps ?</p>
+                        <input type="text" name="q8" placeholder="Votre réponse ici" required>
+                    </div>
+    
+                    <div class="question">
+                        <p>9. Combien de courses Max Verstappen a-t-il remportées en 2022 ?</p>
+                        <input type="number" name="q9" min="0" max="25" placeholder="Nombre de victoires" required>
+                    </div>
+    
+                    <div class="question">
+                        <p>10. Quel constructeur a remporté son premier championnat en 2021 ?</p>
+                        <label><input type="radio" name="q10" value="A"> Red Bull</label><br>
+                        <label><input type="radio" name="q10" value="B"> McLaren</label><br>
+                        <label><input type="radio" name="q10" value="C"> Mercedes</label><br>
+                        <label><input type="radio" name="q10" value="D"> Renault</label>
+                    </div>
+                </div>
+            </div>
+    
+            <button type="button" id="submit-btn">Soumettre</button>
+            <button type="button" id="reset-btn">Réinitialiser</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Résultat</h2>
+            <p id="score"></p>
+            <h3>Réponses Correctes :</h3>
+            <ul id="correct-answers"></ul>
+        </div>
+        <script src="/js/scripts.js"></script>
+    </div>
+    
+</body>
+</html>
